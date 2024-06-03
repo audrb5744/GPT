@@ -18,7 +18,7 @@ for package in required_packages:
 import openai
 import gradio
 
-openai.api_key = "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"
+openai.api_key = "{key-code}"
 start_sequence = "\nAI: "
 restart_sequence = "\n:Human: "
 
@@ -53,7 +53,7 @@ block = gradio.Blocks()
 
 
 with block:
-    gradio.Markdown("""<h1><center>나만의 GPT 챗봇</center></h1>""")
+    gradio.Markdown("""<h1><center>my GPT</center></h1>""")
     chatbot = gradio.Chatbot()
     message = gradio.Textbox(placeholder=prompt)
     state = gradio.State()
